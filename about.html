@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+
+<!-- <!DOCTYPE html>    indicamos al navegaor q estamos trabajando con la ultima version de html5  -->
+
+<html lang="es">
+
+<!-- head   : van los metadatos informaocion q indiucamos al navegador para q identifique de forma correcta la pagian web -->
+
+<head>
+
+    <!-- html lang="es">    indica en q idioma esta escrinto el docuimento html -->
+
+    <!-- indicamos al navegador q tenbemos vocales con tilde -->
+    <!-- Lea codigo ASCII-->
+    <meta charset="UTF-8">
+
+    <!-- Para q el visitio web sea adaptable a cualquier dispositivo -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- contniendio de la pagina web -->
+    <meta name="description" content="Esta es mi primera pagina web">
+
+    <!-- para el motor de busquedad busque mi pagina / escanear-->
+    <meta name="robots" content="index, follow">
+
+    <!-- palabras claves para encontrar mi pagina web -->
+    <meta name="keywords" content="pagina, website, sitio web, mi primera">
+
+    <!-- Nombre de nuestra página -->
+    <meta name="copyright" content="Copyright © MiWeb.com">
+
+    <!-- Indicarle al autor de quien ha creado la pagina web -->
+    <meta name="Author" Lang="es" content="Gerson N">
+
+
+
+    <!-- para q la pagina se recargue cada 10 segundos de acuerdo al contenido 
+    <meta http-equiv="refresh" content="10" />
+    -->
+
+
+    <!-- 
+    observacion : para q despues de 5 segundos se recargue otra pogina web 
+
+    <meta http-equiv="refresh" content="5; url=https://www.youtube.com/@geronelo1435" />    
+    -->
+
+
+    <!-- normalize : agregamos un archivo .css -->
+    <link rel="stylesheet" href="./css/normalize.css">
+
+
+    <!-- estilos css : agregamos un archivo .css -->
+    <link rel="stylesheet" href="./css/estilos.css">
+
+
+
+
+    <!-- icono en la pagina web : para importar iconos -->
+    <link rel="shortcut icon" href="./imagenes/icon.png" type="image/x-icon">
+
+    <!-- 
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    -->
+
+    <!-- enlace para icnos de fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+
+
+
+
+
+    <!-- 
+    colocar un nombre referido a lo q contiene el documento html  y se mostrara en una pestaña -->
+    <title>Flexbox</title>
+
+</head>
+
+
+<body>
+
+    <!-- contenedor header -->
+    <header class="contenedor__header">
+
+        <!-- contenedor__superior -->
+        <nav class="contenedor__superior">
+
+            <div class="contenedor">
+
+                <!-- logo -->
+                <div class="superior__logo">
+                    <i class="fa-solid fa-mug-hot fa-2xl" style="color: #d17721;"></i>
+                    <h1 class="logo__titulo" style="color: #d17721;">Coffee & Shop</h1>
+                </div>
+
+
+                <div class="superior__menu">
+                    <ul>
+                        <li><a href="index.html" class="menupagina">Heim</a></li>
+                        <li><a href="about.html" style="color: #d17721; font-weight: 500;">Über uns</a></li>
+                        <li><a href="menu.html" class="menupagina">Speisekarte</a></li>
+                        <li><a href="services.html" class="menupagina">Dienstleistungen</a></li>
+                        <li><a href="contact.html" class="menupagina">Kontakt</a></li>
+                    </ul>
+                </div>
+
+
+            </div>
+        </nav>
+
+
+    </header>
+
+
+
+
+    <main>
+
+        <!-- banner -->
+        <section class="banner">
+            <div class="banner_fila">
+                <div class="contenedor">
+                    <h5>
+                        <a href="index.html" class="ebanner">Heim</a> <span class="tbanner"> » Über Uns page</span>
+                    </h5>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- contenedor__about1 -->
+        <section class="contenedor__about1 altura1 altura320">
+            <div class="contenedor">
+
+                <div class="about1__fila">
+
+                    <div class="about1__lado1">
+                        <div class="about1lado1__arriba">
+                            <h5 class="colorh5"><i class="fa-solid fa-mug-hot" style="color: #d17721;"></i> Heart of
+                                USA's
+                                Best</h5>
+                            <h3>
+                                What we're all about
+                            </h3>
+
+                            <p>
+                                We have 25+ years of experience."Our only Aim, Happy Customers. At the end of the day,
+                                it all comes down to coffee. But to get there it takes a dedicated, knowledgeable team
+                                with a sustainable approach. We make the delicious coffee for the coffee lovers. We are
+                                a team of dedicated coffee fans who celebrate exceptional coffee brands. We provide a
+                                variety of services both to our new and regular customers. All your favourites,
+                                delivered straight to you.
+                            </p>
+                        </div>
+
+
+                        <div class="about1lado1__abajo">
+                            <div class="detalle__estrellas">
+                                <i class="fa-solid fa-star fa-xl"></i>
+                                <i class="fa-solid fa-star fa-xl"></i>
+                                <i class="fa-solid fa-star fa-xl"></i>
+                                <i class="fa-solid fa-star fa-xl"></i>
+                                <i class="fa-regular fa-star fa-xl"></i>
+                            </div>
+
+                            <div class="detalle__texto">
+                                <h4>"Best cafe in London. Ever!”</h4>
+                                <p>
+                                    “Duis cursus, mi quis viverra ornare, eros dolor
+                                    interdum nulla, ut diam libero erat.
+                                    Aenean faucibus nibh et justo cursus.”
+                                </p>
+
+                                <p style="font-weight: 400;">
+                                    - Peter Johnson, Chef
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="about1__lado2">
+                        <div class="about1lado2__imagen">
+                            <img src="./imagenes/about3.jpg" alt="about2" title="about2">
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- contenedor__about2 -->
+        <section class="contenedor__about2 altura1 altura320">
+            <div class="contenedor">
+
+                <div class="about2__fila">
+
+                    <div class="about2__tituloysubtitulo altura2 altura320s">
+                        <h5 class="colorh5"><i class="fa-solid fa-mug-hot" style="color: #d17721;"></i> Become our
+                            Dealer
+                        </h5>
+                        <h3>
+                            More than 4500+ customers trust us
+                        </h3>
+                    </div>
+
+
+                    <div class="about5__grupo">
+                        <article class="article__about5">
+                            <i class="fa-solid fa-mug-saucer fa-2xl"></i>
+                            <h4>Aroma, Taste and Flavour</h4>
+                            <p>
+                                Coffee has a distinctive aroma, which is easily recognizable. Ut blandit eu leo non.
+                                Duis sed dolor amet ipsum sit et init laore leo et.
+                            </p>
+                        </article>
+
+
+                        <article class="article__about5">
+                            <i class="fa-solid fa-martini-glass fa-2xl"></i>
+                            <h4>Composition of coffee</h4>
+                            <p>
+                                Coffee has a distinctive aroma, which is easily recognizable. Ut
+                                blandit eu leo non.
+                                Duis sed dolor amet ipsum sit et init laore leo et.
+                            </p>
+                        </article>
+
+
+
+                        <article class="article__about5">
+                            <i class="fa-brands fa-pagelines fa-2xl"></i>
+                            <h4>Physcological Effects</h4>
+                            <p>
+                                Coffee has a distinctive aroma, which is easily recognizable. Ut
+                                blandit eu leo non.
+                                Duis sed dolor amet ipsum sit et init laore leo et.
+                            </p>
+                        </article>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- contenedor__about3 -->
+        <section class="contenedor__about3 altura1 altura320">
+            <div class="contenedor">
+
+                <div class="about3__fila">
+
+                    <div class="about3__tituloysbutitulo altura2 altura320s">
+                        <h5 class="colorh5"><i class="fa-solid fa-mug-hot" style="color: #d17721;"></i> Blend Coffee
+                        </h5>
+                        <h3>
+                            Statistics
+                        </h3>
+                    </div>
+
+
+                    <div class="abouts3__grupo">
+                        <article class="article__about3">
+                            <img src="./imagenes/smile.svg" alt="smile">
+                            <h3>36,076</h3>
+                            <p>Happy Customers</p>
+                        </article>
+
+
+                        <article class="article__about3">
+                            <img src="./imagenes/user.svg" alt="user">
+                            <h3>786</h3>
+                            <p>Master Chef's</p>
+                        </article>
+
+
+                        <article class="article__about3">
+                            <img src="./imagenes/store.svg" alt="store">
+                            <h3>963</h3>
+                            <p>Branches</p>
+                        </article>
+
+
+                        <article class="article__about3">
+                            <img src="./imagenes/award.svg" alt="award">
+                            <h3>10,630</h3>
+                            <p>Awards Won</p>
+                        </article>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- contenedor__about4 -->
+        <section class="contenedor__about4 altura1 altura320">
+            <div class="contenedor">
+
+                <div class="about4__fila">
+
+                    <div class="about4__lado1">
+
+                        <div class="about4lado1__arriba altura2 altura320s">
+                            <h5 class="colorh5"><i class="fa-solid fa-mug-hot" style="color: #d17721;"></i> services we
+                                offer
+                            </h5>
+                            <h3>
+                                Experience the ultimate coffee
+                            </h3>
+                        </div>
+
+
+                        <div class="about4lado1__abajo">
+                            <img src="./imagenes/about1.jpg" alt="about1" title="about1">
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="about4__lado2">
+
+                        <div class="about4__grupo">
+
+                            <article class="article__about4">
+                                <i class="fa-solid fa-earth-americas fa-2xl"></i>
+                                <h4>
+                                    Service1
+                                </h4>
+
+                                <p>
+                                    consectetur adipisicing elit, et sed do eiusmod tempor Lorem ipsum sit amet.
+                                </p>
+                            </article>
+
+
+                            <article class="article__about4">
+                                <i class="fa-solid fa-mug-saucer fa-2xl"></i>
+                                <h4>
+                                    Service2
+                                </h4>
+
+                                <p>
+                                    consectetur adipisicing elit, et sed do eiusmod tempor Lorem ipsum sit amet.
+                                </p>
+                            </article>
+
+
+
+                            <article class="article__about4">
+                                <i class="fa-brands fa-delicious fa-2xl"></i>
+                                <h4>
+                                    Service3
+                                </h4>
+
+                                <p>
+                                    consectetur adipisicing elit, et sed do eiusmod tempor Lorem ipsum sit amet.
+                                </p>
+                            </article>
+
+
+
+
+                            <article class="article__about4">
+                                <i class="fa-solid fa-truck fa-2xl"></i>
+                                <h4>
+                                    Service4
+                                </h4>
+
+                                <p>
+                                    consectetur adipisicing elit, et sed do eiusmod tempor Lorem ipsum sit amet.
+                                </p>
+                            </article>
+
+
+
+
+
+
+                        </div>
+
+
+                    </div>
+
+
+
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- contenedor__about5 -->
+        <section class="contenedor__about5 altura1 altura320">
+            <div class="contenedor">
+
+                <div class="about5__fila">
+
+
+                    <div class="about5__tituloysubtitulo altura2 altura320s">
+                        <h5 class="colorh5"><i class="fa-solid fa-mug-hot" style="color: #d17721;"></i> Our Team</h5>
+                        <h3>
+                            Team Members
+                        </h3>
+                    </div>
+
+
+                    <div class="about5__grupo">
+                        <article class="article__about5">
+                            <img src="./imagenes/team1.jpg" alt="team1" title="team1">
+                            <div class="detalle__about5">
+                                <h4>Matthäus Hetzenauer</h4>
+                                <p>Barista at coffeebean</p>
+
+                                <div class="referencia__redsocial">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                    <i class="fa-brands fa-twitter"></i>
+                                    <i class="fa-brands fa-instagram"></i>
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                            </div>
+
+                        </article>
+
+
+
+                        <article class="article__about5">
+                            <img src="./imagenes/team2.jpg" alt="team1" title="team1">
+                            <div class="detalle__about5">
+                                <h4>Ria Von Brauchitsch</h4>
+                                <p>Barista at coffeebean</p>
+
+                                <div class="referencia__redsocial">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                    <i class="fa-brands fa-twitter"></i>
+                                    <i class="fa-brands fa-instagram"></i>
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                            </div>
+
+                        </article>
+
+
+                        <article class="article__about5">
+                            <img src="./imagenes/team3.jpg" alt="team1" title="team1">
+                            <div class="detalle__about5">
+                                <h4>Josef Kammhuber</h4>
+                                <p>Barista at coffeebean</p>
+
+                                <div class="referencia__redsocial">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                    <i class="fa-brands fa-twitter"></i>
+                                    <i class="fa-brands fa-instagram"></i>
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                            </div>
+
+                        </article>
+
+
+                        <article class="article__about5">
+                            <img src="./imagenes/team4.jpg" alt="team1" title="team1">
+                            <div class="detalle__about5">
+                                <h4>Hermann Foertsch</h4>
+                                <p>Barista at coffeebean</p>
+
+                                <div class="referencia__redsocial">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                    <i class="fa-brands fa-twitter"></i>
+                                    <i class="fa-brands fa-instagram"></i>
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                            </div>
+
+                        </article>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- contenedor__contacto -->
+        <section class="contenedor__contacto altura1 altura320">
+            <div class="contenedor">
+
+                <div class="contacto__fila">
+
+                    <div class="contacto_lado1">
+                        <div class="contacto__tituloysubtitulo">
+                            <h5 class="colorh5"><i class="fa-solid fa-mug-hot" style="color: #d17721;"></i> Beratung
+                            </h5>
+
+                            <h3>
+                                Kostenlose Beratung anfordern <br>
+                                Lasst es uns tun!
+                            </h3>
+
+                        </div>
+                    </div>
+
+
+                    <div class="contacto__lado2">
+                        <div class="fila__botones">
+                            <a href="services.html" class="btn btn--black">
+                                Dienstleistungen
+                            </a>
+
+                            <a href="contact.html" class="btn btn--light">
+                                Kontakt <i class="fa-solid fa-angles-right fa-xs"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+    </main>
+
+
+
+    <!-- pie -->
+    <footer class="contenedor__footerautor">
+        <div class="contenedor">
+
+            <div class="pie__titulo">
+                <p>
+                    &copy; 2024, Derechos Reservados, Diseñado por
+                    <span class="autor">93R50N</span>
+
+                    <br>
+                    Jeder Beitrag, egal wie klein, kann jemandes Leben verändern. Spende:
+                    <span class="donacion">
+                        <a href="https://wa.link/5nawh3"> Plin o Yape</a>
+                    </span>
+                </p>
+
+            </div>
+
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>
